@@ -9,7 +9,7 @@ criticalMax = 8.0
 warnMin = 2.5
 warnMax = 7.5
 strEmailAddress = "dr.ankitrastogi@gmail.com"
-strTwitterHandle = "anuj_k_rastogi"
+strTwitterHandle = "ankitrasto"
 dirProbe1 = "/var/www/html/rz_temp.txt"
 
 
