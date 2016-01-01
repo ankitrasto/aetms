@@ -72,42 +72,46 @@
             <div class="col-lg-10 text-left">
                 <h2><strong>South East Toronto Family Health Team</strong></h2>
                 <h3>Automated Electronic Fridge Temperature Monitoring System</h3>
+					
+				<div class="panel panel-default">
+				<div class="panel-heading"><strong>Red Zone Fridge</strong> (Probe: DS18B20, Serial:28-00000530d4e7)</div> 
+				<div class="panel-body">
+					<img src="syringe_REDZONE.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left">
+					
+					<div class="rz_tempContainer"> 
+					<?php
+					$linesRZ = file("rz_temp.txt");
+					$RZTemp = floatval($linesRZ[0]);
+					if($RZTemp >= 2.5 and $RZTemp <= 7.5){
+						echo '<p class="bg-success">'.$RZTemp.' deg. C. </p>';	
+					}elseif($RZTemp <= 2.0 or $RZTemp >= 8.0){
+						echo '<h3 class="bg-danger">'.$RZTemp.' deg. C. <strong>CRITICAL</strong> </h3>';	
+					}else{
+						echo '<p class="bg-warning">'.$RZTemp.' deg. C. <strong>WARN</strong> </p>';
+					}
+					echo 'Last Updated: '.$linesRZ[1].'<br><br>';
+					?>
+					</div>
                 
-                
-                <br>
-                
-                <img src="syringe_REDZONE.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left">
-                <p class="lead" style="color:rgb(255,0,0)">Red Zone Fridge</p>
-                <div class="rz_tempContainer"> 
- 				<?php
-				$linesRZ = file("rz_temp.txt");
-				$RZTemp = floatval($linesRZ[0]);
-				if($RZTemp >= 2.5 and $RZTemp <= 7.5){
-					echo '<p class="bg-success">'.$RZTemp.' deg. C. </p>';	
-				}elseif($RZTemp <= 2.0 or $RZTemp >= 8.0){
-					echo '<p class="bg-danger">'.$RZTemp.' deg. C. <strong>CRITICAL</strong> </p>';	
-				}else{
-					echo '<p class="bg-warning">'.$RZTemp.' deg. C. <strong>WARN</strong> </p>';
-				}
-				echo 'Last Updated: '.$linesRZ[1].'<br><br>';
-				?>
-                </div>
-				
-		<br><br><br><br><br><br>
+				</div>
+				</div>
+               
+            <div class="panel panel-default">
+			<div class="panel-heading"><strong>Green Zone Fridge</strong> (Probe: DS18B20, Serial: N/A)</div> 
+			<div class="panel-body">
+			<ul class="list-unstyled">	
+				<img src="syringe_GREENZONE.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left"> <br><h3><strong>OFFLINE</strong></h3> 
+			</div>
+			</div>
             
-                <img src="syringe_GREENZONE.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left">
-                <p class="lead text-success">Green Zone Fridge</p>
-                <p class="bg-info"><strong>OFFLINE</strong></p>              
-                
-                <br><br><br><br><br><br><br>
-                
-                <img src="syringe_BLUEZONE_2.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left">
-                <p class="lead" style="color:rgb(0,0,255)">Blue Zone Fridge</p>
-                <p class="bg-info"><strong>OFFLINE</strong></p> 
-                
-				
-
-		<br><br><br><br><br><br><br>
+            <div class="panel panel-default">
+			<div class="panel-heading"><strong>Blue Zone Fridge</strong> (Probe: DS18B20, Serial: N/A)</div> 
+			<div class="panel-body">
+			<ul class="list-unstyled">	
+				<img src="syringe_BLUEZONE_2.jpg" alt="Responsive Image" class="img-responsive" width="30%" align="left"> <br><h3><strong>OFFLINE</strong></h3> 
+			</div>
+			</div>
+			
 		<div class="panel panel-default">
 		<div class="panel-heading">Temperature Ranges</div> 
 		<div class="panel-body">

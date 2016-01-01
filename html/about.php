@@ -82,7 +82,7 @@
 				<li>Realtime continuous temperature monitoring</li>
 				<li>Web-based, interactive graphing and logging functionality across various hour/day/month intervals</li>
 				<li>Email and Twitter-based alerting system with text-messaging functionality to notify users of out-of-range temperatures</li>
-				<li>Email-based database backup</li>
+				<li>Email-based database backup <strong>(planned)</strong></li>
 				<li>At-a-glance monitoring for multiple sensors</li>
 				<li>Support for multiple temperature sensors</li>
 			
@@ -96,19 +96,11 @@
 			<div class="panel panel-default">
 			<div class="panel-heading">How To</div> 
 			<div class="panel-body">
-			<ul class="list-unstyled text-info">	
-				coming soon
+			<ul class="list-unstyled">	
+				A 2-Part complete guide is available that details parts used, software components and a outlines steps followed to configure and use the hardware and software. This can be found at <a href="https://ankitrasto.wordpress.com/2015/12/28/part-12-vaccine-temperature-monitoring-with-the-raspberry-pi/">ankitrasto.wordpress.com</a>, with the source code hosted on github at <a href="https://github.com/ankitrasto">github.com/ankitrasto</a>   
 			</div>
 			</div>
-					
-			<div class="panel panel-default">
-			<div class="panel-heading">Further Information and Reading</div> 
-			<div class="panel-body">
-			<ul class="list-unstyled text-info">	
-				coming soon
-			</div>
-			</div>
-			
+								
 			<div class="panel panel-default">
 			<div class="panel-heading">Technical Information</div> 
 			<div class="panel-body">
@@ -130,17 +122,22 @@
 			</ul>
 			<br>
 			
-			<img src="gplv3-127x51.png" alt="GNU GPL v3" align="center">
+			
 			
 			<br><strong>Licensing</strong><br>
-			All original parts of the AETMS software, including PHP and python code are licensed under the GNU GPL v3 license. The following other libraries have been used with their respective licenses:
+			
+			<div class="text-center">
+				<img src="gplv3-127x51.png" alt="GNU GPL v3" align="center">
+			</div>
+			
+			All original parts of the AETMS software, including PHP and python code are licensed under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3 license</a>. The following other libraries have been used with their respective licenses:
 			
 			<ul class="list">
 			<li>Bootstrap (front-end web framework): <a href="https://opensource.org/licenses/MIT">MIT License</a> </li>
 			<li>Google Charts API (graphing interface) <a href="https://developers.google.com/terms/">Google API Terms of Service</a></li>
 			</ul>
 			
-			The project software page can be found at <a href="https://github.com/ankitrasto">github.com/ankitrasto</a>
+			The AETMS project software page can be found at <a href="https://github.com/ankitrasto">github.com/ankitrasto</a>
 			
 			</div>
 			</div>
